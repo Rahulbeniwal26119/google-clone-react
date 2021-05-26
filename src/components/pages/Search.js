@@ -6,11 +6,13 @@ import {Button} from "@material-ui/core"
 import {useHistory} from "react-router-dom"
 import {useStateValue} from "../../StateProvider"
 import {actionTypes} from "../../reducer";
+import { SettingsBluetooth } from '@material-ui/icons'
 
 function Search({hideButtons = false}) {
-    const [{}, dispatch] = useStateValue();
+    const [{term}, dispatch] = useStateValue();
     var history = useHistory();
     const [input, setInput]  =  useState(""); 
+    const [length, setInputLength] = useState(0);
     const search = e =>{
         e.preventDefault();
         console.log("You hit search");
@@ -26,7 +28,7 @@ function Search({hideButtons = false}) {
         <form className="search">
             <div className="search_input">
                 <SearchIcon className="search_inputIcon"/>
-                <input value={input} onChange={e => setInput(e.target.value)}/>
+                <input value={length == 0 ? term : input} onChange={e => {setInput(e.target.value); setInputLength(1);}}/>
                 <MicIcon/>
             </div>
             {
