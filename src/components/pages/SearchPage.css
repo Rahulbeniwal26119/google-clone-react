@@ -22,3 +22,73 @@
     margin : unset;
     max-width : unset;
 }
+.searchPageOptions{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+.searchPageOptionsLeft, .searchPageOptionsRight{
+    display: flex;
+}
+.searchPageOptionsLeft a, .searchPageOptionsRight a{
+    text-decoration: none;
+    color: grey;
+}
+
+.searchPageOptionsRight{
+    margin-left: 80px;
+}
+
+.searchPageOption{
+    display: flex;
+    align-items : center;
+    margin-right: 20px;
+}
+
+.searchPageOption a{
+    margin-left: 5px;
+}
+.searchPageOptionsLeft{
+    margin-left: 20px;
+}
+
+.searchPageResult{
+    margin : 40px 0;
+
+}
+.searchPageResultCount{
+    color: #70757a;
+    font-size : 14px;
+}
+
+.searchPageResults{
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.searchPageResultTitle{
+    text-decoration: none;
+}
+
+
+.searchPageResultTitle:hover{
+    text-decoration: underline;
+}
+
+.searchPageResultTitle > h2{
+    font-weight : 900;
+}
+
+.searchPageResultSnippet{
+    margin-bottom: 10px;
+}
+.searchPageResultImage{
+    object-fit : contain;
+    height : 20px;
+    width : 20px;
+    margin-right: 10px;
+}
+
