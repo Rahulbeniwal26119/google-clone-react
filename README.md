@@ -7,7 +7,10 @@
 
 This loads the search result without refreshing the page. 
 
-### `npm start`
+<img src="https://github.com/Rahulbeniwal26119/google-clone-react/blob/master/public/Google2.png" alt="screenshot1"/>
+
+<img src="https://github.com/Rahulbeniwal26119/google-clone-react/blob/master/public/Google1.png" alt="screenshot2"/>
+
 
 Runs the app in the development mode.\
 
