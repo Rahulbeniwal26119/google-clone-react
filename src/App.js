@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
 import Home from './components/pages/Home';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import SearchPage from "./components/pages/SearchPage";
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/search">
-            <SearchPage/>
+            <SearchPage />
           </Route>
         </Switch>
       </Router>
